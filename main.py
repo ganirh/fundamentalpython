@@ -1,8 +1,8 @@
-# Fundamental Python
+makan = input('Sudah makan..? [y/n]: ')
 
-import requests
-
-url = "https://en.wikipedia.org/wiki/Python_(programming_language)"
-res = requests.get(url)
-
-print("Status Code Situs: {}".format(res.status_code))
+if makan == 'y':
+    print('Saya Tidak Lapar')
+elif makan == 'n':
+    print('Saya Sudah Kenyang')
+else:
+    print('Maaf Input Salahy')
